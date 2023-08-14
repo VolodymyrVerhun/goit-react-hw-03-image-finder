@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import style from './Modal.module.css';
+import PropTypes from 'prop-types';
 
 export default class Modal extends Component {
   render() {
@@ -14,3 +15,8 @@ export default class Modal extends Component {
     );
   }
 }
+
+Modal.propTypes = {
+  toggleModal: PropTypes.func,
+  image: PropTypes.string,
+};

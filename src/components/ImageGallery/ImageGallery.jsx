@@ -4,6 +4,7 @@ import { getImage } from 'components/servises/getImage';
 import ImageGalleryItem from 'components/ImageGalleryItem/ImageGalleryItem';
 import { ColorRing } from 'react-loader-spinner';
 import Button from 'components/Button/Button';
+import PropTypes from 'prop-types';
 
 export default class ImageGallery extends Component {
   state = {
@@ -65,3 +66,7 @@ export default class ImageGallery extends Component {
     );
   }
 }
+
+ImageGallery.propTypes = {
+  searchImage: PropTypes.string,
+};

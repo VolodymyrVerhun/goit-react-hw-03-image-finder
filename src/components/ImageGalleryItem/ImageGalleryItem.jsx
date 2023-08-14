@@ -1,6 +1,7 @@
 import { Component } from 'react';
 import style from './ImageGalleryItem.module.css';
 import Modal from 'components/Modal/Modal';
+import PropTypes from 'prop-types';
 
 export default class ImageGalleryItem extends Component {
   state = {
@@ -37,3 +38,8 @@ export default class ImageGalleryItem extends Component {
     );
   }
 }
+
+ImageGalleryItem.propTypes = {
+  toggleModal: PropTypes.func,
+  image: PropTypes.object,
+};
